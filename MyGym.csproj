@@ -1,0 +1,175 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Configurations>Debug;Release</Configurations>
+    <BuildWithMSBuildOnMono>true</BuildWithMSBuildOnMono>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2612" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.53" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+    <PackageReference Include="Xamarin.Controls.SignaturePad.Forms" Version="3.0.0" />
+    <PackageReference Include="Telerik.UI.for.Xamarin" Version="2022.2.621.1" />
+    <PackageReference Include="Forms9Patch" Version="2.4.9" />
+    <PackageReference Include="XamarinFastEntry.Behaviors" Version="1.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="RestSharp" />
+    <None Remove="HtmlAgilityPack" />
+    <None Remove="Rg.Plugins.Popup" />
+    <None Remove="Xamarin.Controls.SignaturePad.Forms" />
+    <None Remove="Telerik.UI.for.Xamarin" />
+    <None Remove="Resources\FontAwesome5Brand.otf" />
+    <None Remove="Resources\FontAwesome5Regular.otf" />
+    <None Remove="Resources\FontAwesome5Solid.otf" />
+    <None Remove="Resources\art.jpg" />
+    <None Remove="Resources\balletjazzcombo.jpg" />
+    <None Remove="Resources\classolder1.jpg" />
+    <None Remove="Resources\dance1.jpg" />
+    <None Remove="Resources\free.jpg" />
+    <None Remove="Resources\fun.jpg" />
+    <None Remove="Resources\gymnastics.jpg" />
+    <None Remove="Resources\gymsters.jpg" />
+    <None Remove="Resources\hiphop.jpg" />
+    <None Remove="Resources\jrkickers.jpg" />
+    <None Remove="Resources\karate.jpg" />
+    <None Remove="Resources\kickers.jpg" />
+    <None Remove="Resources\littlebundles.jpg" />
+    <None Remove="Resources\logo.png" />
+    <None Remove="Resources\logo_small.png" />
+    <None Remove="Resources\mightymites.jpg" />
+    <None Remove="Resources\minikickers.jpg" />
+    <None Remove="Resources\movetogether.jpg" />
+    <None Remove="Resources\ninjatraining.jpg" />
+    <None Remove="Resources\pno.jpg" />
+    <None Remove="Resources\practiceandplay.jpg" />
+    <None Remove="Resources\preballet.jpg" />
+    <None Remove="Resources\preschoolprep.jpg" />
+    <None Remove="Resources\siblings.jpg" />
+    <None Remove="Resources\sports.jpg" />
+    <None Remove="Resources\terrifictots.jpg" />
+    <None Remove="Resources\tinytykes.jpg" />
+    <None Remove="Resources\waddlers.jpg" />
+    <None Remove="Resources\whizkids.jpg" />
+    <None Remove="Resources\zumbakids.jpg" />
+    <None Remove="Resources\zumbakidsjr.jpg" />
+    <None Remove="Xamarin.Plugin.Calendar" />
+    <None Remove="XamForms.Controls.Calendar" />
+    <None Remove="Views\Event\" />
+    <None Remove="Views\Party\" />
+    <None Remove="Resources\wait1.webp" />
+    <None Remove="Resources\wait10.webp" />
+    <None Remove="Resources\wait11.webp" />
+    <None Remove="Resources\wait2.webp" />
+    <None Remove="Resources\wait3.webp" />
+    <None Remove="Resources\wait4.webp" />
+    <None Remove="Resources\wait5.webp" />
+    <None Remove="Resources\wait6.webp" />
+    <None Remove="Resources\wait7.webp" />
+    <None Remove="Resources\wait8.webp" />
+    <None Remove="Resources\wait9.webp" />
+    <None Remove="Resources\wait0.webp" />
+    <None Remove="Resources\wait12.webp" />
+    <None Remove="Resources\wait13.webp" />
+    <None Remove="Resources\wait14.webp" />
+    <None Remove="Resources\wait15.webp" />
+    <None Remove="Resources\wait16.webp" />
+    <None Remove="Resources\wait17.webp" />
+    <None Remove="Forms9Patch" />
+    <None Remove="Views\ClassCardPackage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Braintree\IPayService.cs" />
+    <Compile Remove="Views\Braintree\PaymentForm.xaml.cs" />
+    <Compile Remove="Views\Braintree\PayViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\Braintree\PaymentForm.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAwesome5Brand.otf" />
+    <EmbeddedResource Include="Resources\FontAwesome5Regular.otf" />
+    <EmbeddedResource Include="Resources\FontAwesome5Solid.otf">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\art.jpg" />
+    <EmbeddedResource Include="Resources\balletjazzcombo.jpg" />
+    <EmbeddedResource Include="Resources\classolder1.jpg" />
+    <EmbeddedResource Include="Resources\dance1.jpg" />
+    <EmbeddedResource Include="Resources\free.jpg" />
+    <EmbeddedResource Include="Resources\fun.jpg" />
+    <EmbeddedResource Include="Resources\gymnastics.jpg" />
+    <EmbeddedResource Include="Resources\gymsters.jpg" />
+    <EmbeddedResource Include="Resources\hiphop.jpg" />
+    <EmbeddedResource Include="Resources\jrkickers.jpg" />
+    <EmbeddedResource Include="Resources\karate.jpg" />
+    <EmbeddedResource Include="Resources\kickers.jpg" />
+    <EmbeddedResource Include="Resources\littlebundles.jpg" />
+    <EmbeddedResource Include="Resources\logo.png" />
+    <EmbeddedResource Include="Resources\logo_small.png" />
+    <EmbeddedResource Include="Resources\mightymites.jpg" />
+    <EmbeddedResource Include="Resources\minikickers.jpg" />
+    <EmbeddedResource Include="Resources\movetogether.jpg" />
+    <EmbeddedResource Include="Resources\ninjatraining.jpg" />
+    <EmbeddedResource Include="Resources\pno.jpg" />
+    <EmbeddedResource Include="Resources\practiceandplay.jpg" />
+    <EmbeddedResource Include="Resources\preballet.jpg" />
+    <EmbeddedResource Include="Resources\preschoolprep.jpg" />
+    <EmbeddedResource Include="Resources\siblings.jpg" />
+    <EmbeddedResource Include="Resources\sports.jpg" />
+    <EmbeddedResource Include="Resources\terrifictots.jpg" />
+    <EmbeddedResource Include="Resources\tinytykes.jpg" />
+    <EmbeddedResource Include="Resources\waddlers.jpg" />
+    <EmbeddedResource Include="Resources\whizkids.jpg" />
+    <EmbeddedResource Include="Resources\zumbakids.jpg" />
+    <EmbeddedResource Include="Resources\zumbakidsjr.jpg" />
+    <EmbeddedResource Include="Resources\wait1.webp" />
+    <EmbeddedResource Include="Resources\wait10.webp" />
+    <EmbeddedResource Include="Resources\wait11.webp" />
+    <EmbeddedResource Include="Resources\wait2.webp" />
+    <EmbeddedResource Include="Resources\wait3.webp" />
+    <EmbeddedResource Include="Resources\wait4.webp" />
+    <EmbeddedResource Include="Resources\wait5.webp" />
+    <EmbeddedResource Include="Resources\wait6.webp" />
+    <EmbeddedResource Include="Resources\wait7.webp" />
+    <EmbeddedResource Include="Resources\wait8.webp" />
+    <EmbeddedResource Include="Resources\wait9.webp" />
+    <EmbeddedResource Include="Resources\wait0.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wait12.webp" />
+    <BundleResource Include="Resources\wait13.webp" />
+    <BundleResource Include="Resources\wait14.webp" />
+    <BundleResource Include="Resources\wait15.webp" />
+    <BundleResource Include="Resources\wait16.webp" />
+    <BundleResource Include="Resources\wait17.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Views\ClassCard\ClassCardBilling.xaml">
+      <IncludeInPackage>true</IncludeInPackage>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\ClassCardPackage\" />
+  </ItemGroup>
+  <Import Project="..\mygymmobiledata\mygymmobiledata.projitems" Label="Shared" Condition="Exists('..\mygymmobiledata\mygymmobiledata.projitems')" />
+</Project>

@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jschnurmacher/Projects/mygym/MyGym/MyGym.csproj": {}
+  },
+  "projects": {
+    "/Users/jschnurmacher/Projects/mygym/MyGym/MyGym.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jschnurmacher/Projects/mygym/MyGym/MyGym.csproj",
+        "projectName": "MyGym",
+        "projectPath": "/Users/jschnurmacher/Projects/mygym/MyGym/MyGym.csproj",
+        "packagesPath": "/Users/jschnurmacher/.nuget/packages/",
+        "outputPath": "/Users/jschnurmacher/Projects/mygym/MyGym/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jschnurmacher/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Forms9Patch": {
+              "target": "Package",
+              "version": "[2.4.9, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.53, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Telerik.UI.for.Xamarin": {
+              "target": "Package",
+              "version": "[2022.2.621.1, )"
+            },
+            "Xamarin.Controls.SignaturePad.Forms": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2612, )"
+            },
+            "XamarinFastEntry.Behaviors": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/jschnurmacher/Library/Caches/VisualStudio/17.0/MSBuild/9200_3/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
